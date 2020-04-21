@@ -1,4 +1,4 @@
-.h1, .h2, .h3, .h4, .h5, .h6, .para, .button {
+.h1, .h2, .h3, .h4, .h5, .h6, .para, .button, .span, .navbar__item {
     font-family: 'Roboto', sans-serif; 
     margin: 0; 
 }
@@ -50,6 +50,7 @@
 .button__icon {
     margin-left: 0.5rem;
 }
+/* promo */ 
 .promo {
     height: 100vh; 
     background-image: url(../images/promo-image-two.jpg);
@@ -61,7 +62,7 @@
 .promo .promo__header {
     font-size: 6rem; 
     text-transform: uppercase;
-    line-height: 0.8;
+    line-height: 1;
     font-weight: 200; 
     margin-bottom: 2rem; 
 }
@@ -72,9 +73,32 @@
     color: rgba(255,255,255,0.5);
     font-size: 1.3rem; 
     font-weight: 200; 
-    margin-bottom: 3rem; 
+    margin-bottom: 4rem; 
 }
 .promo .promo__highlight-text {
     border-bottom: 2px solid #f5cb5a;
     color: #f5cb5a; 
+}
+/* navbar */ 
+.navbar {
+    position: fixed;
+    width: 100%; 
+}
+.navbar__container {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center; 
+    padding-top: 2rem;
+}
+.navbar__list {
+    list-style-type: none; 
+    display: flex; 
+    margin: 0; 
+}
+.navbar__list .navbar__item {
+    color: white; 
+    margin: 0 2rem;
+}
+.navbar__list .navbar__item--active {
+    color: #f5cb5a;
 }

@@ -210,3 +210,35 @@
     border-top: 2px solid #a10f2b;
     border-left: 2px solid #a10f2b;
 }
+/* gallery */ 
+.gallery .container__row--center {
+    flex-wrap: wrap; 
+}
+.gallery .container__col--four-lg {
+    padding-bottom: 1.2rem;
+    text-align:center;
+}
+.gallery .gallery__title {
+    text-align: center; 
+    padding-top: 3rem; 
+}
+.gallery .image {
+    width: 95%; 
+}
+/* footer */ 
+.footer {
+    padding: 8rem 3rem; 
+}
+.footer .container__row--center {
+    align-items: flex-start; 
+}
+.footer .container__col--four-lg {
+    text-align: center; 
+}
+.footer .footer__heading {
+    margin-bottom: 1rem; 
+    font-size: 1.1rem;
+}
+.footer .footer__contact--info {
+    margin-bottom: 1.5rem; 
+}

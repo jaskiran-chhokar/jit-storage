@@ -15,9 +15,17 @@
     align-items: center; 
     justify-content: center;    
 }
+.container__col--four-lg {
+    flex: 0 0 33%;
+    max-width: 33%;
+}
 .container__col--six-lg {
     flex: 0 0 50%;
     max-width: 50%;
+}
+.container__col--seven-lg {
+    flex: 0 0 60%;
+    max-width: 60%;
 }
 .container__col--twelve-lg {
     flex: 0 0 100%;
@@ -32,8 +40,19 @@
     background-image: linear-gradient(to left, rgba(0,0,0,0.8), rgba(0,0,0,0.88));
     z-index: -1; 
 }
+.container__header {
+    font-size: 4.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
 .color--yellow {
     color: #f5cb5a; 
+}
+.highlight-text--red {
+    color: #a10f2b;
+    font-weight: 400;
+    border-bottom: 1px solid #a10f2b;
 }
 .button {
     text-decoration: none;
@@ -50,6 +69,14 @@
 .button__icon {
     margin-left: 0.5rem;
 }
+.para {
+    color: #111; 
+    font-size: 1.3rem;
+    font-weight: 200; 
+}
+.image {
+    max-width: 100%;
+}
 /* promo */ 
 .promo {
     height: 100vh; 
@@ -62,18 +89,18 @@
 .promo .promo__header {
     font-size: 6rem; 
     text-transform: uppercase;
-    line-height: 1;
+    line-height: 0.8;
     font-weight: 200; 
-    margin-bottom: 2rem; 
+    margin-bottom: 1.5rem; 
 }
 .promo .promo-header--white {
     color: white; 
 }
 .promo .promo__para {
     color: rgba(255,255,255,0.5);
-    font-size: 1.3rem; 
+    font-size: 2rem; 
     font-weight: 200; 
-    margin-bottom: 4rem; 
+    margin-bottom: 3.5rem; 
 }
 .promo .promo__highlight-text {
     border-bottom: 2px solid #f5cb5a;
@@ -101,4 +128,55 @@
 }
 .navbar__list .navbar__item--active {
     color: #f5cb5a;
+}
+/* icons */ 
+.icons {
+    padding: 3rem 3rem; 
+}
+.icons .container__row--center .container__col--four-lg {
+    text-align: center;
+    margin-left: 1rem;
+    padding: 4rem 0rem;
+    background-color: rgba(251,238,202,0.2);
+}
+.icons .icons__one {
+    border-bottom: 2px solid #f5cb5a;
+    border-right: 2px solid #f5cb5a;
+}
+.icons .icons__two {
+    border-top: 2px solid #f5cb5a;
+    border-right: 2px solid #f5cb5a;
+}
+.icons .icons__three {
+    border-bottom: 2px solid #f5cb5a;
+    border-right: 2px solid #f5cb5a;
+}
+.icons .icons__content {
+    padding-left: 1.5rem; 
+}
+.icons .icons__header {
+    font-size: 1.4rem; 
+    font-weight: 300; 
+    text-transform: uppercase;
+    padding: 0 4.5rem;
+}
+.icons .icons__icon {
+    color: #a10f2b;
+    margin-bottom: 1.5rem;
+}
+/* about us */ 
+.about {
+    padding: 8rem 0; 
+}
+.about .container {
+    padding-bottom: 5rem;
+}
+.about .about__para {
+    line-height: 2.4; 
+}
+.about .about__para, .about .container__header {
+    padding: 0 4.5rem 0 0; 
+}
+.about .about__para--alt {
+    padding: 0 0 0 4.5rem; 
 }

@@ -19,6 +19,10 @@
     flex: 0 0 33%;
     max-width: 33%;
 }
+.container__col--five-lg {
+    flex: 0 0 40%;
+    max-width: 40%;
+}
 .container__col--six-lg {
     flex: 0 0 50%;
     max-width: 50%;
@@ -44,12 +48,13 @@
     text-transform: uppercase;
     font-weight: 300;
     font-size: 2rem; 
+    position: relative;
+    z-index: 1;
 }
 .container__header {
     font-size: 4.5rem;
     font-weight: 300;
     text-transform: uppercase;
-    margin-bottom: 1.5rem;
     padding: 0 0 4rem 0; 
 }
 .color--yellow {
@@ -61,7 +66,7 @@
     border-bottom: 1px solid #a10f2b;
 }
 .highlight-bg-yellow {
-    background-color: rgba(251,238,202,0.2); 
+    background-color: rgba(251,238,202,0.8); 
     padding: 0 2rem; 
 }
 .button {
@@ -128,7 +133,7 @@
     align-items: center; 
     padding-top: 2rem;
     padding-bottom: 2rem;
-    border-bottom: 2px solid rgb(245,203,90)
+    border-bottom: 1px solid rgba(245,203,90,0.2);
 }
 .navbar__list {
     list-style-type: none; 
@@ -144,37 +149,37 @@
 }
 /* icons */ 
 .icons {
-    padding: 3rem 3rem; 
+    padding: 0 3rem 0 3rem; 
+    border-bottom: 1px solid #eee; 
 }
 .icons .container__row--center .container__col--four-lg {
-    text-align: center;
     margin-left: 1rem;
-    padding: 4rem 0rem;
-    background-color: rgba(251,238,202,0.2);
+    padding: 3rem 0;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
 }
 .icons .icons__one {
-    border-bottom: 2px solid #a10f2b;
-    border-right: 2px solid #a10f2b;
+    border-right: 1px solid #eee
 }
 .icons .icons__two {
-    border-top: 2px solid #a10f2b;
-    border-right: 2px solid #a10f2b;
-}
-.icons .icons__three {
-    border-bottom: 2px solid #a10f2b;
-    border-right: 2px solid #a10f2b;
+    border-right: 1px solid #eee
 }
 .icons .icons__content {
     padding-left: 1.5rem; 
 }
+.icons .icons__top-header {
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: 500; 
+}
 .icons .icons__header {
-    font-size: 1.4rem; 
+    font-size: 1rem; 
     font-weight: 300; 
-    padding: 0 4.5rem;
+    color: #777; 
 }
 .icons .icons__icon {
     color: #a10f2b;
-    margin-bottom: 1.5rem;
 }
 /* about us */ 
 .about {
@@ -184,7 +189,8 @@
     padding-bottom: 5rem;
 }
 .about .about__title {
-    padding-top: 4rem; 
+    padding: 6rem 0; 
+    margin-top: 1rem;
 }
 .about .container__top-header, .about .container__header {
     text-align: center; 
@@ -198,19 +204,33 @@
 .about .about__para--alt {
     padding: 0 0 0 4.5rem; 
 }
+.about .container__col--five-lg {
+    position: relative;
+}
 .about .about__image--border {
-    padding-top: 1.5rem; 
-    padding-right: 1.5rem; 
-    border-top: 2px solid #a10f2b;
-    border-right: 2px solid #a10f2b;
+    border: 2px solid #a10f2b;
+    position: absolute;
+    top: -6%;
+    left: 4%;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
 }
 .about .about__image--border-alt {
-    padding-top: 1.5rem; 
-    padding-left: 1.5rem; 
-    border-top: 2px solid #a10f2b;
-    border-left: 2px solid #a10f2b;
+    border: 2px solid #a10f2b;
+    position: absolute;
+    top: -6%;
+    left: -5%;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
 }
 /* gallery */ 
+.gallery {
+    background: linear-gradient(to top, rgb(245,203,90) 0%, rgba(245,203,90,0.9) 100%), url(../images/promo-image-two.jpg);
+    padding-bottom: 6rem;
+    margin-top: 4.5rem;
+}
 .gallery .container__row--center {
     flex-wrap: wrap; 
 }
@@ -220,7 +240,7 @@
 }
 .gallery .gallery__title {
     text-align: center; 
-    padding-top: 3rem; 
+    padding: 5.5rem 0 2rem 0;
 }
 .gallery .image {
     width: 95%; 

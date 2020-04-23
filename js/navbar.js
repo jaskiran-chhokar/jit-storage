@@ -11,3 +11,9 @@ const navbarToggle = () => {
 
 navbarToggle();
 
+const navbar = document.querySelector('.navbar__container');
+window.addEventListener('scroll', e => {
+    window.scrollY === 0 ? navbar.classList.remove('background--black') : navbar.classList.add('background--black'); 
+}); 
+
+

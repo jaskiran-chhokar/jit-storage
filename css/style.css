@@ -69,6 +69,9 @@
     background-color: rgba(251,238,202,0.8); 
     padding: 0 2rem; 
 }
+.background--black {
+    background-color: #111;
+}
 .button {
     text-decoration: none;
     text-transform: uppercase;
@@ -137,6 +140,8 @@
     padding-top: 2rem !important;
     padding-bottom: 2rem !important;
     border-bottom: 1px solid rgba(245,203,90,0.2);
+    position: relative;
+    z-index: 100; 
 }
 .navbar__list {
     list-style-type: none; 
@@ -201,6 +206,10 @@
 .about .about__para {
     line-height: 2.4; 
 }
+.about .about__para--highlight {
+    background-color: white;
+    padding: 4.5rem 3.5rem !important;
+}
 .about .about__para, .about {
     padding: 0 4.5rem 0 0; 
 }
@@ -209,6 +218,7 @@
 }
 .about .container__col--five-lg {
     position: relative;
+    z-index: -1;
 }
 .about .about__image--border {
     border: 2px solid #a10f2b;
@@ -233,6 +243,12 @@
     background: linear-gradient(to top, rgb(245,203,90) 0%, rgba(245,203,90,0.9) 100%), url(../images/promo-image-two.jpg);
     padding-bottom: 6rem;
     margin-top: 4.5rem;
+    position: relative;
+    z-index: -2;
+    top: -300px;
+}
+.gallery .gallery__arrow {
+    color: #a10f2b;
 }
 .gallery .container__row--center {
     flex-wrap: wrap; 
@@ -243,14 +259,18 @@
 }
 .gallery .gallery__title {
     text-align: center; 
-    padding: 5.5rem 0 2rem 0;
+    padding: 18rem 0 6rem 0;
 }
 .gallery .image {
     width: 95%; 
 }
 /* footer */ 
+.home .footer {
+    position: relative;
+    top: -100px; 
+}
 .footer {
-    padding: 10rem 3rem 3rem 3rem; 
+    padding: 0 3rem; 
 }
 .footer .container__row--center {
     align-items: flex-start; 
@@ -261,7 +281,7 @@
 .footer .footer__about--info {
     color: #777;
     font-size: 1.1rem;
-    line-height: 2; 
+    line-height: 2.4; 
 }
 .footer .footer__heading {
     text-transform: uppercase;
@@ -273,7 +293,7 @@
     color: #777; 
     text-decoration: none;
     font-size: 1.1rem;
-    line-height: 2;
+    line-height: 2.4;
 }
 .footer .footer__contact--info {
     margin-bottom: 1.5rem; 
@@ -287,7 +307,7 @@
     color: #777; 
     font-weight: 200; 
     font-size: 1rem;
-    line-height: 2;
+    line-height: 2.4;
 }
 .footer .footer__copyright--info {
     border-top: 1px solid #eee; 
@@ -300,6 +320,11 @@
     color: #777; 
 }
 /* media queries */
+@media only screen and (min-width: 991px) {
+    .navbar .navbar__mobile {
+        display: none; 
+    }
+}
 @media only screen and (max-width: 991px) {
     .container__col--four-lg, .container__col--five-lg, .container__col--six-lg, .container__col--seven-lg {
         flex: 0 0 100%;
@@ -321,12 +346,16 @@
     }
     .about {
         text-align: center;
+        padding: 0 0.5rem 0 0.5rem; 
     }
     .about .about__title {
         padding: 6rem 0 3rem 0; 
     }
     .about__image--border, .about__image--border-alt {
-        border: none !important; 
+        display: none !important;
+    }
+    .about .container__col--five-lg {
+        position: static;
     }
     .about .container__col--seven-lg {
         margin-bottom: 4rem; 
@@ -406,5 +435,51 @@
     }
     .about .about__para, .about {
         padding-right: 0 !important;
+    }
+}
+@media only screen and (max-width: 414px) {
+    .para {
+        font-size: 1.1rem;
+    }
+    .promo .promo__para {
+        font-size: 1.4rem;
+    }
+    .icons .container__row--center .container__col--four-lg div {
+        padding: 0 1rem;
+    }
+    .about .container__top-header {
+        font-size: 1.3rem;
+    }
+    .about .container__header, .container__header {
+        font-size: 2.3rem;
+    }
+    .footer {
+        padding: 2rem 1.5rem 2rem 1.5rem;
+    }
+}
+@media only screen and (max-width: 414px) { 
+    .para {
+        font-size: 1rem; 
+    }
+    .about .container__header, .container__header {
+        font-size: 2rem;
+    }
+    .promo .promo__header {
+        font-size: 2.45rem;
+    }
+    .promo .promo__para {
+        font-size: 1.2rem;
+    }
+    .icons {
+        padding: 0 1rem;
+    }
+    .about .about__title {
+        padding: 6rem 0 2rem 0;
+    }
+    .footer {
+        padding: 2rem 1rem 2rem 1rem;
+    }
+    .footer .container__col--four-lg {
+        margin-top: 4rem;
     }
 }

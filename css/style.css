@@ -92,6 +92,9 @@
 .image {
     max-width: 100%;
 }
+.display--none {
+    display: none;
+}
 /* promo */ 
 .promo {
     height: 100vh; 
@@ -131,8 +134,8 @@
     display: flex; 
     justify-content: space-between;
     align-items: center; 
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
     border-bottom: 1px solid rgba(245,203,90,0.2);
 }
 .navbar__list {
@@ -334,13 +337,74 @@
     .gallery .gallery__title {
         padding-bottom: 5rem; 
     }
-    .navbar__list {
+    .navbar__desktop {
         display: none;
+    }
+    .navbar__mobile--button {
+        position: relative;
+        z-index: 1;
+    }
+    .navbar__mobile--contain {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        background-color: #111;
+        padding: 3rem 2rem;
+        opacity: 1; 
+        animation: increaseOpac 0.3s ease-in-out;
+    }
+    @keyframes increaseOpac {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+    }
+    .navbar__mobile .navbar__list {
+        display: block; 
+        line-height: 3;
+    }
+    .navbar__icon {
+        color: white; 
+        font-size: 1.6rem;
     }
     .footer {
         padding: 3rem 3rem 3rem 3rem;
     }
     .footer .container__col--four-lg {
         margin-top: 5rem; 
+    }
+}
+@media only screen and (max-width: 600px) {
+    .container {
+        padding: 0 1.5rem;
+    }
+    .container__col--six-md {
+        flex: 0 0 100%;
+        max-width: 100%;        
+    }
+    .promo .promo__header {
+        font-size: 3.5rem;
+    }
+    .promo .promo__para {
+        font-size: 1.5rem;
+    }
+    .container__top-header {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    .container__header {
+        font-size: 3rem;
+    }
+    .highlight-bg-yellow {
+        padding: 0 1rem; 
+    }
+    .icons {
+        padding: 0 1.5rem; 
+    }
+    .about .about__para, .about {
+        padding-right: 0 !important;
     }
 }

@@ -17,13 +17,24 @@
                 <!--<img src="" alt="Just in Time Self Storage Logo">-->
                 <span class="span color--yellow">Just in Time Storage</span>
             </div>
-            <div>
+            <div class="navbar__desktop">
                 <ul class="navbar__list">
                     <li class="navbar__item navbar__item--active">Home</li>
                     <li class="navbar__item">Storage Units</li>
                     <li class="navbar__item">Storage Tips</li>                    
                     <li class="navbar__item">Contact</li>
                 </ul>
+            </div>
+            <div class="navbar__mobile">
+                <a class="navbar__mobile--button" href="#"><i class="navbar__icon fas fa-bars"></i></a>
+                <div class="navbar__mobile--contain display--none">
+                    <ul class="navbar__list">
+                        <li class="navbar__item navbar__item--active">Home</li>
+                        <li class="navbar__item">Storage Units</li>
+                        <li class="navbar__item">Storage Tips</li>                    
+                        <li class="navbar__item">Contact</li>
+                    </ul>                    
+                </div>
             </div>
         </div>
     </nav>
@@ -180,5 +191,6 @@
             </div>
         </div>
     </section>
+    <script src="js/navbar.js"></script>
 </body>
 </html>

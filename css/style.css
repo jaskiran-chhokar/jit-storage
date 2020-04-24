@@ -410,6 +410,7 @@
     font-weight: 500; 
     text-transform: uppercase;
     letter-spacing: 0.1rem;  
+    color: #a10f2b;
 }
 .contact .contact__info {
     padding: 1rem 0;
@@ -427,11 +428,12 @@
 }
 .contact .contact__input {
     margin-bottom: 1.5rem; 
-    padding: 1rem 3rem;
-    width: 85%;
+    padding: 1rem 2rem;
+    width: 100%;
     border: none; 
     border-bottom: 2px solid #a10f2b;
     background-color: rgb(251,238,202);
+    font-family: 'Poppins', sans-serif;
 }
 .contact .contact__textarea {
     width: 100%;
@@ -439,6 +441,8 @@
     border: 2px solid #a10f2b;
     background-color: rgb(251,238,202);
     margin-top: 1rem;
+    font-family: 'Poppins', sans-serif;
+    padding: 2rem;
 }
 .contact .button {
     margin-top: 2rem;
@@ -603,6 +607,12 @@
     }
     .storage-tips .storage-tips__content {
         border-bottom: 1px solid #eee; 
+    }
+    .contact .contact__input, .contact .contact__textarea {
+        width: 85%; 
+    }
+    .contact .contact__form {
+        margin-top: 3rem;
     }
     .home .footer {
         top: -200px; 

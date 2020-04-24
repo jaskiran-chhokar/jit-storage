@@ -614,6 +614,9 @@
     .contact .contact__form {
         margin-top: 3rem;
     }
+    .contact__info--contain {
+        padding-top: 3rem;
+    }
     .home .footer {
         top: -200px; 
     }
@@ -678,6 +681,13 @@
     }
     .storage-tips .storage-tips__title {
         padding-top: 4rem;
+    }
+    .contact {
+        padding-bottom: 8rem;
+        margin-bottom: 1rem;
+    }
+    .contact .contact__input, .contact .contact__textarea {
+        width: 80%; 
     }
     .footer .container__col--four-lg {
         text-align: left; 

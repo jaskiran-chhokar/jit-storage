@@ -553,6 +553,12 @@
     .storage-info .storage-info__title, .storage-info .storage-info__title--alt {
         padding: 3.5rem 0 0 0;
     }
+    .storage-tips .storage-tips__alt {
+        background-color: white;
+    }
+    .storage-tips .storage-tips__content {
+        border-bottom: 1px solid #eee; 
+    }
     .home .footer {
         top: -200px; 
     }
@@ -611,6 +617,19 @@
     }
     .storage__image--border, .storage__image--border-alt {
         display: none; 
+    }
+    .storage-tips .storage-tips__content {
+        padding: 3rem 0.5rem;
+    }
+    .storage-tips .storage-tips__title {
+        padding-top: 4rem;
+    }
+    .footer .container__col--four-lg {
+        text-align: left; 
+    }
+    .footer .footer__copyright--info {
+        text-align: left; 
+        line-height: 2; 
     }
 }
 @media only screen and (max-width: 414px) {
@@ -714,6 +733,12 @@
     .header .header__title {
         font-size: 2.5rem;
         margin-bottom: 1rem;
+    }
+    .storage-tips {
+        padding: 5rem 2rem;
+    }
+    .storage-tips .storage-tips__content {
+        padding: 3rem 1rem;
     }
 }
 @media only screen and (max-width: 600px) and (orientation: landscape) {

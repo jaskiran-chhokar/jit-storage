@@ -252,7 +252,7 @@
     width: 100%;
     z-index: -1;
 }
-.about .about__image--border-alt {
+.about .about__image--border-alt, .storage-info .storage__image--border {
     border: 2px solid #a10f2b;
     position: absolute;
     top: -6%;
@@ -286,6 +286,50 @@
 }
 .gallery .image {
     width: 95%; 
+}
+/* header - inner pages */ 
+.header {
+    height: 70vh; 
+    background-image: url(../images/promo-image-two.jpg);
+    background-size: cover; 
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1; 
+}
+.header__overlay {
+    position: absolute; 
+    top: 0;
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    background-image: linear-gradient(to left, rgba(0,0,0,0.85), rgba(0,0,0,0.8));
+    z-index: -1; 
+}
+.header .header__title {
+    color: white; 
+    text-transform: uppercase;
+    font-weight: 400; 
+    font-size: 5rem;
+    line-height: 0.8; 
+    margin: 4rem 0 2rem 0;
+}
+.header .header__para {
+    color: rgba(255,255,255,0.6); 
+    margin-bottom: 3rem;
+}
+/* storage units */ 
+.storage-info {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+.storage-info .container__col--five-lg {
+    position: relative;
+}
+.storage-info  .storage-units__title{
+    padding-left: 5rem; 
+}
+.storage-info .para {
+    line-height: 2.4; 
 }
 /* footer */ 
 .home .footer {

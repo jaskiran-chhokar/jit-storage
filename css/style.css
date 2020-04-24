@@ -418,11 +418,12 @@
 .footer .footer__copyright--info {
     border-top: 1px solid #eee; 
     padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
     margin-top: 5rem;
     text-align: center;
 }
 .footer .footer__copyright--text {
-    font-size: 0.95rem;
+    font-size: 1rem;
     color: #777; 
 }
 /* media queries */
@@ -433,6 +434,9 @@
     }
     .about {
         padding: 0 2rem; 
+    }
+    .header .header__title {
+        font-size: 3.5rem;
     }
 }
 @media only screen and (min-width: 991px) {
@@ -517,6 +521,9 @@
         color: white; 
         font-size: 1.6rem;
     }
+    .storage-info .storage-info__title, .storage-info .storage-info__title--alt {
+        padding: 3.5rem 0 0 0;
+    }
     .home .footer {
         top: -200px; 
     }
@@ -559,6 +566,23 @@
     .about .about__para, .about {
         padding-right: 0 !important;
     }
+    .header .header__title {
+        font-size: 3.2rem;
+    }
+    .storage-info {
+        padding-top: 5rem;
+    }
+    .storage-units {
+        padding-bottom: 5rem;
+        padding-top: 5rem;
+        margin-bottom: 5rem;
+    }
+    .storage-units .storage-units__square {
+        width: 98%; 
+    }
+    .storage__image--border, .storage__image--border-alt {
+        display: none; 
+    }
 }
 @media only screen and (max-width: 414px) {
     .para {
@@ -575,6 +599,9 @@
     }
     .about .container__header, .container__header {
         font-size: 2.3rem;
+    }
+    .header .header__title {
+        font-size: 1.8rem;
     }
     .footer {
         padding: 2rem 1.5rem 2rem 1.5rem;
@@ -618,6 +645,18 @@
         margin-top: 4rem;
     }
 }
+@media only screen and (max-width: 320px) { 
+    .navbar__container {
+        padding-top: 1.5rem !important;
+        padding-bottom: 1.5rem !important;
+    }
+    .header .header__title {
+        margin: 4rem 0 1rem 0;
+    }
+    .container__top-header {
+        font-size: 1rem;
+    }
+}
 @media only screen and (max-width: 823px) and (orientation: landscape) {
     .promo {
         height: 110vh; 
@@ -637,8 +676,18 @@
     .gallery .container__header {
         margin-bottom: 1.5rem; 
     }
+    .header {
+        height: 100vh;
+    }
+    .header .container__row {
+        height: 100%; 
+    }
+    .header .header__title {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
 }
-@media only screen and (max-width: 823px) and (orientation: landscape) {
+@media only screen and (max-width: 600px) and (orientation: landscape) {
     .navbar__container {
         padding-top: 1.5rem !important; 
         padding-bottom: 1.5rem !important;  
@@ -649,4 +698,10 @@
     .promo .promo__para {
         font-size: 1.1rem;
     }  
+    .header .header__title {
+        font-size: 1.5rem;
+    }
+    .header .header__para {
+        font-size: 1rem;
+    }
 }

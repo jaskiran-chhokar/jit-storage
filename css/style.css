@@ -355,6 +355,21 @@
     text-align: center; 
     padding: 3rem 0;
 }
+.storage-units .storage-units__info {
+    display: flex; 
+    justify-content: center; 
+    margin-bottom: 1rem;
+}
+.storage-units .storage-units__icon {
+    color: #a10f2b;
+    margin-right: 1rem; 
+}
+.storage-units .storage-units__para {
+    padding-left: 3rem;
+    font-weight: 400; 
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
 .storage-units .container__row--center {
     flex-wrap: wrap; 
 }
@@ -367,7 +382,27 @@
     border: 2px solid #a10f2b;
     margin-bottom: 2rem;
 }
-.storage-units .storage-units__square div { 
+.storage-units .storage-units__price {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+.storage-units .storage-units__price .h4 {
+    font-size: 1.2rem;
+    font-weight: 400; 
+    color: #a10f2b;
+}
+.storage-units .storage-units__price .h6 {
+    font-size: 1.1rem;
+    font-weight: 400; 
+    color: #a10f2b;
+    border-bottom: 1px solid #a10f2b; 
+}
+.storage-units .storage-units__price .fa-image {
+    margin-left: 0.5rem;
+}
+.storage-units .storage-units__square .storage-units__square--contain { 
     padding: 3rem 2.5rem;
 }
 .storage-units .storage-units__square .storage-units__header { 
@@ -432,14 +467,14 @@
     width: 100%;
     border: none; 
     border-bottom: 2px solid #a10f2b;
-    background-color: rgb(251,238,202);
+    background-color: rgba(251,238,202,0.7);
     font-family: 'Poppins', sans-serif;
 }
 .contact .contact__textarea {
     width: 100%;
     height: 200px; 
     border: 2px solid #a10f2b;
-    background-color: rgb(251,238,202);
+    background-color: rgba(251,238,202,0.7);
     margin-top: 1rem;
     font-family: 'Poppins', sans-serif;
     padding: 2rem;

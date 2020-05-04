@@ -571,8 +571,8 @@
 }
 @media only screen and (max-width: 991px) {
     .container__col--four-lg, .container__col--five-lg, .container__col--six-lg, .container__col--seven-lg {
-        flex: 0 0 100%;
-        max-width: 100%;
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
     }
     .container__col--six-md {
         flex: 0 0 50%;

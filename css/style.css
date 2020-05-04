@@ -588,6 +588,9 @@
         border-right: none !important; 
         border-bottom: 1px solid #eee;
     }
+    .icons .container__row--center .container__col--four-lg {
+        justify-content: flex-start;
+    }
     .about {
         text-align: center;
         padding: 0 0.5rem 0 0.5rem; 

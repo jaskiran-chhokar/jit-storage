@@ -325,6 +325,10 @@
     color: rgba(255,255,255,0.6); 
     margin-bottom: 3rem;
 }
+.header .promo__highlight-text {
+    border-bottom: 2px solid #f5cb5a;
+    color: #f5cb5a; 
+}
 /* storage info */ 
 .storage-info {
     padding: 10rem 5rem 3rem 5rem;

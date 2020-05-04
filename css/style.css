@@ -467,9 +467,6 @@
 .contact .contact__input , .contact .contact__textarea {
     display: block; 
 }
-.contact input[name=bot-field] {
-    -webkit-appearance: none;
-}
 .contact .contact__input {
     margin-bottom: 1.5rem; 
     padding: 1rem 1.2rem;

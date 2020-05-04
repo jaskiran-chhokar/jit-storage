@@ -769,6 +769,12 @@
     }
     .header .header__title {
         font-size: 1.8rem;
+        margin-bottom: 1rem;
+        margin-top: 5.5rem;
+    }
+    .header .header__para {
+        font-size: 1.1rem;
+        line-height: 1.4;
     }
     .footer {
         padding: 2rem 1.5rem 2rem 1.5rem;

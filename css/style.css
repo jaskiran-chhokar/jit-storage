@@ -723,6 +723,10 @@
     .storage-units .storage-units__square {
         width: 98%; 
     }
+    .storage-units .storage-units__para {
+        padding-left: 0; 
+        letter-spacing: 0.05rem;
+    }
     .storage__image--border, .storage__image--border-alt {
         display: none; 
     }

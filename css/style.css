@@ -361,6 +361,7 @@
 }
 .storage-units .storage-units__info {
     display: flex; 
+    flex-wrap: wrap; 
     justify-content: center; 
     margin-bottom: 1rem;
 }
@@ -373,6 +374,7 @@
     font-weight: 400; 
     text-transform: uppercase;
     letter-spacing: 0.1rem;
+    margin-bottom: 1.5rem;
 }
 .storage-units .container__row--center {
     flex-wrap: wrap; 
@@ -651,6 +653,9 @@
     }
     .storage-tips .storage-tips__content {
         border-bottom: 1px solid #eee; 
+    }
+    .storage-units .container__header {
+        margin-bottom: 4rem;
     }
     .contact .contact__input, .contact .contact__textarea {
         width: 85%; 

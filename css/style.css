@@ -540,6 +540,10 @@
     text-decoration: none;
     font-size: 1.1rem;
     line-height: 2.4;
+    transition: 0.2s ease-in;
+}
+.footer .footer__link:hover {
+    color: #a10f2b;
 }
 .footer .footer__contact--info {
     margin-bottom: 1.5rem; 

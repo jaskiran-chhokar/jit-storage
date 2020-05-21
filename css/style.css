@@ -121,11 +121,9 @@
     max-width: 100%;
     opacity: 0;
     transition: 1000ms ease-in; 
-    /*transform: translateY(150px);*/
 }
 .image-show {
     opacity: 1;
-    /*transform: translateY(0px);*/
 }
 .display--none {
     display: none;

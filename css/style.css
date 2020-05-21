@@ -301,6 +301,10 @@
 }
 .gallery .image {
     width: 95%; 
+    transition: 0.3s ease-in; 
+}
+.gallery .image:hover {
+    transform: scale(0.95);
 }
 /* header - inner pages */ 
 .header {

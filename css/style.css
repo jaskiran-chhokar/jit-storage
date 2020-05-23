@@ -185,6 +185,7 @@
 }
 .navbar__list .navbar__item--active a {
     color: #f5cb5a;
+    border-bottom: 2px solid; 
 }
 /* icons */ 
 .icons {

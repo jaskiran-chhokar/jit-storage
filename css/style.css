@@ -1,6 +1,9 @@
 * {
     scroll-behavior: smooth;
 }
+body {
+    transition: all 1s ease-in;
+}
 .h1, .h2, .h3, .h4, .h5, .h6, .para, .button, .span, .navbar__item {
     font-family: 'Poppins', sans-serif; 
     margin: 0; 

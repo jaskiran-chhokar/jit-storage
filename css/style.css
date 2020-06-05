@@ -102,6 +102,7 @@ body {
 .button__dark {
     font-weight: 400; 
     border: 2px solid #a10f2b;
+    background-color: transparent;
     color: #a10f2b;
     padding: 1rem 2.5rem;
     border-radius: 0; 

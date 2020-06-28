@@ -35,7 +35,7 @@
 
 ✔️ Ensure that the contact form is functional. 
 
-### Built With 
+## Built With 
 
 ✔️ HTML5 
 
@@ -43,7 +43,7 @@
 
 ✔️ JavaScript 
 
-### Acknowledgments 
+## Acknowledgments 
 
 [Font Awesome](https://fontawesome.com/)
 

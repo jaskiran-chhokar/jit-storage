@@ -16,4 +16,37 @@
 
 ✔️ Ensure that the website design will be **accessible** to all users (e.g. users with colour blindness or any other visual impairement). 
 
-✔️ Design a responsive set of 5 page layouts. 
+✔️ Design a **responsive set** of page layouts. 
+
+
+### 📱 Client-Side Development 
+
+✔️ Write **meaningful image descriptions** and follow SEO guildlines. 
+
+✔️ Follow recommended **web accessibility guildlines**, in order to make the website valuable to users that may have visual or hearing impairements. 
+
+✔️ Write clean and readable JavaScript code to **add interactivity** to website. 
+
+✔️ Implement a **lazy-loading** JavaScript functionality, in order to ensure page speed optimization.
+
+✔️ Write semantic HTML and follow modern CSS principals to develop responsive website layouts. 
+
+✔️ Properly **size and optimize images.**
+
+✔️ Ensure that the contact form is functional. 
+
+### Built With 
+
+✔️ HTML5 
+
+✔️ CSS3 
+
+✔️ JavaScript 
+
+### Acknowledgments 
+
+[Font Awesome](https://fontawesome.com/)
+
+[Netlify](https://www.netlify.com/)
+
+[Google Fonts](https://fonts.google.com/)
